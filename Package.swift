@@ -21,16 +21,9 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .binaryTarget(
-            name: "TodayColor",
-                      path: "TodayColor")
-        .binaryTarget(
-            name: "TodayColor",
-            url: "https://github.com/mesummery/TodaySDK/releases/latest/download/TodayColor.xcframework.zip",
-            checksum: "39b7c788f7d63b1493c867a71190e7503293c5095496195a7c6d520748f931a4"),
-        .binaryTarget(
-            name: "TodayNumber",
-            url: "https://github.com/mesummery/TodaySDK/releases/latest/download/TodayNumber.xcframework.zip",
-            checksum: "bf6deb43d298236cce7360fece38bdf2695a01060d1cfebe36fe267e9670c154"),
+        .binaryTarget(name: "TodayColor",
+                      path: "TodayColor.xcframework"),
+        .binaryTarget(name: "TodayNumber",
+                      path: "TodayNumber.xcframework"),
     ]
 )
