@@ -1,0 +1,11 @@
+framework module TodayNumber {
+  umbrella header "TodayNumber.h"
+
+  export *
+  module * { export * }
+}
+
+module TodayNumber.Swift {
+    header "TodayNumber-Swift.h"
+    requires objc
+}

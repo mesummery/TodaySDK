@@ -23,6 +23,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "TodayColor",
+                      path: "TodayColor")
+        .binaryTarget(
+            name: "TodayColor",
             url: "https://github.com/mesummery/TodaySDK/releases/latest/download/TodayColor.xcframework.zip",
             checksum: "39b7c788f7d63b1493c867a71190e7503293c5095496195a7c6d520748f931a4"),
         .binaryTarget(

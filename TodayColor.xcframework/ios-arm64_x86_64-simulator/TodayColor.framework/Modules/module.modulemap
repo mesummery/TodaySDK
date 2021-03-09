@@ -1,0 +1,11 @@
+framework module TodayColor {
+  umbrella header "TodayColor.h"
+
+  export *
+  module * { export * }
+}
+
+module TodayColor.Swift {
+    header "TodayColor-Swift.h"
+    requires objc
+}
